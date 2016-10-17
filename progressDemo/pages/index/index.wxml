@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view >
+
+    <view class="text">
+        <text>Progress</text>
+    </view>
+    <view>
+        <progress percent="30" show-info class="progress"></progress>
+        <progress percent="40" strokeWidth="13.5" class="progress"></progress>
+        <progress percent="50" show-info color="red" class="progress"></progress>
+        <progress percent="60" show-info active="true" class="progress"></progress>
+        <progress percent="70" show-info class="progress"></progress>
+    </view>
+</view>

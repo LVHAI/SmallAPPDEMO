@@ -1,0 +1,37 @@
+/**index.wxss**/
+.session_title{
+  text-align: center;
+  font-size: 20px;
+  color: red
+}
+
+.bc_green{
+  background-color: green;
+}
+.bc_red{
+  background-color: red;
+}
+
+.bc_yellow{
+  background-color: yellow;
+}
+.bc_blue{
+  background-color: blue;
+}
+
+.scroll-view-item{
+  height: 200px;
+}
+
+.scroll-view-item_H{
+  height: 200px;
+}
+
+.btn-area{
+  margin: 20px 0px 20px 0px;
+  height: 90px;
+}
+.btn{
+  height: 44px;
+  text-align: center;
+}

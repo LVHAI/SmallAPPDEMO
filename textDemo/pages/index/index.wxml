@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="text">
+
+    <view class="text">
+        <text class="text_title">text</text>
+        <text class="text_desc">这是一个text控件</text>
+    </view>
+
+    <view class="btn_area">
+        <text>{{text}}</text>
+        <button bindtap="add">Add line</button>
+        <button bindtap="remove">Remove line</button>
+    </view>
+
+
+</view>

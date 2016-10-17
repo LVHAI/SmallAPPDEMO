@@ -1,0 +1,9 @@
+.progress{
+  margin: 20px 10px;
+}
+
+.text{
+  text-align: center;
+  color: green;
+  margin: 20px;
+}

@@ -1,0 +1,15 @@
+.group{
+  margin: 20px;
+}
+
+.icon{
+  margin: 0px 10px;
+}
+
+.title{
+  text-align: center;
+}
+.title_des{
+  font-size: 30px;
+  color: rgb(100, 100, 100);
+}

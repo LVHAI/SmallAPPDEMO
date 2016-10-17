@@ -1,0 +1,24 @@
+.pickerView{
+  text-align: left;
+  margin: 10px 20px;
+}
+.selector_title{
+  margin-bottom: 6px;
+  display: block;
+}
+.picker{
+  font-size: 20px;
+  background-color: #ddd;
+}
+
+.selector_time_title{
+  margin-bottom: 6px;
+  margin-top: 44px;
+  display: block;
+}
+
+.selector_date_title{
+  margin-bottom: 6px;
+  margin-top: 44px;
+  display: block;
+}

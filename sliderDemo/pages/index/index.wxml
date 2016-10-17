@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+
+    <view class="sliderDemo">
+        <!--
+          min	Number	0	最小值
+          max	Number	100	最大值
+          step	Number	1	步长，取值必须大于 0，并且可被 (max - min) 整除
+          disabled	Boolean	false	是否禁用
+          value	Number	0	当前取值
+          show-value	Boolean	false	是否显示当前value
+          bindchange	EventHandle		完成一次拖动后触发的事件，event.detail = {value:value}
+          -->
+
+          <text class="slider_title">Slider DEMO</text>
+          <slider class="slider" min='0' max='100' step='2' value="20" show-value='true' bindchange="bindchange"></slider>
+    </view>
+</view>

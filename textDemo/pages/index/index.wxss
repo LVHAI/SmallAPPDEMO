@@ -1,0 +1,13 @@
+.text{
+  text-align: center;
+  margin: 20px;
+}
+.text_title{
+  font-size: 30px;
+  color: #000;
+  display: block;
+}
+.text_desc{
+  font-size: 16px;
+  color: #ccc;
+}

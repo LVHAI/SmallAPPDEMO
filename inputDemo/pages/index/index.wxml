@@ -1,0 +1,65 @@
+<!--index.wxml-->
+<view class="Container">
+
+    <view class="input">
+        <!--value用于显示输入框的内容-->
+        <input value="123" class="inputValue"/>
+
+        <view class="inputType">
+            <text>测试input-Type属性</text>
+            <!--type 类型 （text,number,idcard,digit,time,date）-->
+            <input type="text" placeholder="请输入text" class="textValue"></input>
+            <input type="number" placeholder="请输入number" class="numberValue"></input>
+            <input type="idcrd" placeholder="请输入idcard" class="idcardValue"></input>
+            <input type="digit" placeholder="请输入digit" class="digitValue"></input>
+            <input type="time" placeholder="请输入time" class="timeValue"></input>
+            <input type="date" placeholder="请输入date" class="dateValue"></input>
+
+
+            <text>测试input-password属性</text>
+            <!--密码 类型 并且绑定事件，监听输入框的内容变化-->
+            <input type="password" placeholder="请输入password" class="passwordValue" bindinput="passwordChange"></input>
+
+            <view class="inputDisable">
+                <text>测试input-disabled属性</text>
+                <!--disabled 类型 disabled设置为true时，可以输入，否则不能输入,并且通过button事件来改变input的diable属性-->
+                <input type="password" placeholder="请输入password" class="passwordValue" disabled="{{disable}}"></input>
+                <button  class="btn" bindtap="btn">点击改变input的disble属性</button>
+            </view>
+
+
+            <text>测试input-maxlength属性</text>
+            <!--最大输入长度(默认值140)，设置为0的时候不限制最大长度 并且绑定事件，监听输入框的内容变化-->
+            <input type="text" placeholder="请输入text" class="passwordValue" bindinput="passwordChange" maxlength='10'></input>
+
+            <!--以下不再意一一列出，可以自行测试-->
+
+            
+            <text>测试input-auto-focus属性</text>
+            <!--auto-focus，自动聚焦，拉起键盘。页面中只能有一个input设置auto-focus属性-->
+            <input type="text" placeholder="请输入text-auto-focus" class="passwordValue" maxlength='0' auto-focus='true' value="auto-focus"></input>
+
+            <text>测试input-focus属性</text>
+            <!--focus，使得input获取焦点-->
+            <input type="text" placeholder="请输入text-focus" class="passwordValue" maxlength='0' focus='true' value="auto-focus"></input>
+            
+            <text>测试input-bindchange属性</text>
+            <!--输入框失去焦点时，触发bindchange事件，event.detail={value:value}-->
+            <input type="text" placeholder="请输入bindchanget" class="passwordValue" maxlength='110' bindchange="bindchange"></input>
+
+            
+            <text>测试input-bindinput</text>
+            <!--bindinput，除了date/time类型外的输入框，当键盘输入时，触发input事件，event.detail={value:value}，处理函数可以直接return一个字符串，将替换输入框的内容。-->
+            <input type="text" placeholder="请输入bindinputtext" class="passwordValue" maxlength='110' bindinput="bindinput"  value="bindinput"></input>
+            
+
+            <text>测试input-bindfocus</text>
+            <!--bindfocus，输入框聚焦时触发，event.detail = {value:value}-->
+            <input type="text" placeholder="请输入bindfocus-text" class="passwordValue" maxlength='110' bindfocus="bindfocus"  value="bindfocus"></input>
+
+
+            
+            <!--bindblur，输入框失去焦点时触发，event.detail = {value:value}-->
+        </view>
+    </view>
+</view>

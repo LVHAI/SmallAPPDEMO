@@ -1,0 +1,31 @@
+<!--logs.wxml-->
+<view class="container">
+  
+  <view class="checkbox_group">
+        <checkbox-group bindchange="checkboxChange">
+            <view class="label-1" wx:for-items="{{items}}">
+                <label>
+                    <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+                </label>
+            </view>
+        </checkbox-group>
+    </view>
+    
+    <view class="textView">
+        <text>jdffgkdshkghfsdjkghkjdsfhgjkdfhgkjsdhfgkjdfhkjfhdfsjkhgjksdhkjghfdkjhgjkdfhjkfsh</text>
+    </view>
+
+    <view class="textView">
+        <text>jdffgkdshkghfsdjkghkjdsfhgjkdfhgkjsdhfgkjdfhkjfhdfsjkhgjksdhkjghfdkjhgjkdfhjkfsh</text>
+    </view>
+
+    <view class="textView">
+        <text>jdffgkdshkghfsdjkghkjdsfhgjkdfhgkjsdhfgkjdfhkjfhdfsjkhgjksdhkjghfdkjhgjkdfhjkfsh</text>
+    </view>
+
+    <view class="textView">
+        <text>jdffgkdshkghfsdjkghkjdsfhgjkdfhgkjsdhfgkjdfhkjfhdfsjkhgjksdhkjghfdkjhgjkdfhjkfsh</text>
+    </view>
+
+
+</view>

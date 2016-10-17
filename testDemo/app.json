@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/healthService/healthService",
+    "pages/notf/notf",
+    "pages/me/me"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "rgb(11,184,135)",
+    "navigationBarTitleText": "云医通",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "云医院",
+      "iconPath":"images/tabbar-icon/icon_tab_yunyiyuan_n.png",
+      "selectedIconPath":"images/tabbar-icon/icon_tab_yunyiyuan_h.png"
+    }, {
+      "pagePath": "pages/healthService/healthService",
+      "text": "将康服务",
+      "iconPath":"images/tabbar-icon/icon_tab_health_service_n.png",
+      "selectedIconPath":"images/tabbar-icon/icon_tab_health_service_h.png"
+    }, {
+      "pagePath":"pages/notf/notf",
+      "text": "通知",
+      "iconPath":"images/tabbar-icon/icon_tab_notice_n.png",
+      "selectedIconPath":"images/tabbar-icon/icon_tab_notice_h.png"
+    }, {
+       "pagePath":"pages/me/me",
+      "text": "我的",
+      "iconPath":"images/tabbar-icon/icon_tab_me_n.png",
+      "selectedIconPath":"images/tabbar-icon/icon_tab_me_h.png"
+    }],
+    "borderStyle":"white",
+    "selectedColor":"rgb(11,184,135)"
+  }
+}

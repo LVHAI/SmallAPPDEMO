@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+      <modal title="标题" confirm-text="confirm" cancel-text="cancel" hidden="{{modalHidden}}" bindconfirm="modalChange" bindcancel="modalChange">
+          这是对话框的内容。
+      </modal>
+
+      <modal class="modal" hidden="{{modalHidden2}}" no-cancel bindconfirm="modalChange2">
+          <view> 没有标题没有蒙层没有确定的modal </view>
+          <view> 内容可以插入节点 </view>
+      </modal>
+
+      <view class="btn-area">
+          <button type="default" bindtap="modalTap">点击弹出modal</button>
+          <button type="default" bindtap="modalTap2">点击弹出modal2</button>
+      </view>
+</view>

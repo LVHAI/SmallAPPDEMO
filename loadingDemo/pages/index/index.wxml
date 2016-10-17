@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+      <view class="body-view">
+          <loading hidden="{{hidden}}">
+              加载中...
+          </loading>
+          <button type="default" bindtap="loadingTap">点击弹出loading</button>
+      </view>
+
+      <text>{{title}}</text>
+</view>

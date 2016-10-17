@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+
+    <view class="switchDemo">
+        <view class="switch">
+            <text>开关组件样式--switch</text>
+            <switch bindchange="switch1Change"></switch>
+        </view>
+
+
+        <view class="checkbox">
+            <text>开关组件样式--checkbox</text>
+            <switch bindchange="switch2Change" type="checkbox"></switch>
+        </view>
+
+    </view>
+</view>

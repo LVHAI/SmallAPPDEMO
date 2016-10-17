@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+
+    <text class="radio_title">radio-Demo</text>
+
+    <radio-group class="radio-group" bindchange="radioChange">
+
+        <!-- 通过wx:for-items遍历在js中定义的items-->
+        <label class="radio" wx:for-items="{{items}}">
+            <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+        </label>
+        
+    </radio-group>
+
+
+</view>

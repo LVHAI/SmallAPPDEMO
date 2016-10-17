@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="container">
+
+    <!--滚动选择器，现支持三种选择器，通过mode来区分，分别是普通选择器，时间选择器，日期选择器，默认是普通选择器-->
+    <view class="pickerView">
+
+        <!--普通选择器：mode=selector-->
+        <view class="spickerSelector">
+            <text class="selector_title">普通选择器</text>
+            <picker range="{{selector}}" value='0' bindchange="selectorChange">
+                    <view class="picker">
+                         当前选择：{{selector[index]}}
+                    </view>
+            </picker>
+        </view>
+
+        <!--时间选择器：mode=time-->
+        <view class="pickerTime">
+            <text class="selector_time_title">时间选择器</text>
+            <picker range="{{selector}}" value="{{time}}" bindchange="selectorTimeChange" mode="time" start="00:00" end="23:59">
+                    <view class="picker">
+                         当前选择时间：{{time}}
+                    </view>
+            </picker>
+        </view>
+
+        <!--日期选择器：mode=date-->
+        <view class="pickerDate">
+            <text class="selector_date_title">时间选择器</text>
+            <picker range="{{selector}}" value="{{date}}" bindchange="selectorDateChange" mode="date" start="2000-01-01" end="2020-12-31">
+                    <view class="picker">
+                         当前选择日期：{{date}}
+                    </view>
+            </picker>
+        </view>
+
+    </view>
+
+</view>

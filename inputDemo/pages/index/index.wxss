@@ -1,0 +1,58 @@
+.input{
+  text-align: center;
+  background-color: #ccc;
+}
+
+.inputType{
+  margin: 20px 20px;
+  padding-bottom: 10px;
+}
+.inputValue{
+  background-color: coral;
+  margin-top: 10px;
+}
+.numberValue{
+  background-color: chocolate;
+  margin-top: 10px;
+}
+.textValue
+{
+  background-color: chocolate;
+  margin-top: 10px;
+}
+
+.idcardValue
+{
+  background-color: chocolate;
+  margin-top: 10px;
+}
+
+.digitValue
+{
+  background-color: chocolate;
+  margin-top: 10px;
+}
+
+.timeValue
+{
+  background-color: chocolate;
+  margin-top: 10px;
+}
+
+.dateValue
+{
+  background-color: chocolate;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.passwordValue{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn{
+  background-color: green;
+  font-size: 14px;
+  margin-bottom: 10px;
+}

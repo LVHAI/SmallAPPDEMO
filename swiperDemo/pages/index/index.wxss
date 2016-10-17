@@ -1,0 +1,29 @@
+/*.slide-imag{
+    display: block;
+    height: 150px;
+}*/
+
+.page__hd{
+    margin: 20px 0px;
+    text-align: center;
+}
+.page__title{
+    font-size: 30px;
+    color: black;
+}
+
+.page__desc{
+    font-size: 16px;
+    color: #ccc;
+}
+.btn-area{
+    margin: 20px 0px;
+}
+.section__title{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.btn{
+    margin: 4px 20px;
+}

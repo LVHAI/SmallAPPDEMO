@@ -1,0 +1,11 @@
+
+.checkbox_group{
+  /*margin-bottom: 20px;*/
+  /*padding-bottom: 20px;*/
+  background-color: tan;
+}
+.textView{
+  display: inline-block;
+  /*margin-top: 20px;*/
+  background-color: rebeccapurple;
+}
