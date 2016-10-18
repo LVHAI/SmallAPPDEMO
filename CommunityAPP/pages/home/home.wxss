@@ -1,0 +1,102 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  padding: 0;
+}
+.top_bar{
+    height: 36px;
+    background: #feffff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    font-size: 16px;
+}
+.top-bar-item{
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: #cbcccd;
+}
+.top-bar-item-hover{
+    color: #000;
+    border-bottom: 2px solid red;
+}
+.flag-line{
+    width: 25%;
+    height: 2px;
+    background: red;
+    float: left;
+    position: fixed;
+}
+.posts-list{
+    margin-top: 36px;
+}
+.banners{
+    width: 100%;
+    height: 200px;
+}
+.banner-image{
+    width: 100%;
+    height: 100%;
+}
+.banner-title{
+  color: #FFF;
+  position: absolute;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px; 
+  bottom: 30px;
+  font-size: 14px;
+  left: 0;
+}
+.posts-item{
+    margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    border-width: 1px;
+    border-color: #ff0000;
+}
+.cellimage{
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+}
+.celllabel{
+    flex-direction: column;
+    margin-left: 20px;
+}
+.celltext{
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+.celldetail {
+  font-size: 16px;
+  color: grey;
+}
+.cellrow {
+    margin-top: 10px;
+    flex-direction: row;
+}
+.celltip {
+    font-size: 14px;
+    position:absolute;
+    margin-top: 5px;
+    right:10px;
+    color: grey;
+}
+
+.replycountBg{
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 10px;
+    position:absolute;
+    right:10px;
+    background: red;
+    color: white;
+    display: inline-block;
+}

@@ -1,36 +1,46 @@
 <!--index.wxml-->
-<view class="index">
+<view class="container">
 
-    <view class="body">
-        <view class="seccion1">
-            <block wx:for-items="{{cloudService}}">
-                <view class="session1Value" bindtap="sessionToggle" id="{{item.id}}">
-                    <image src="http://app.yunyichina.cn/{{item.logoUrl}}" class="image"></image>
-                    <text class="title">{{item.name}}</text>
-                </view>
-            </block>
-        </view>
-
-        
-        <view class="disView">
-            <view class="gloableText"></view>
-            <view class="moreHealthService" bindtap="gotoHealthService">
-                <image src="/images/home-icon/icon_home_yunyiyuan.png" class="serviceImg"></image>
-                <text class="title_service">健康服务</text>
+    <view class="seccion1">
+        <block wx:for-items="{{cloudService}}">
+            <view class="session1Value" bindtap="sessionToggle" id="{{item.id}}">
+                <image src="http://app.yunyichina.cn/{{item.logoUrl}}" class="image"></image>
+                <text class="title">{{item.name}}</text>
             </view>
-            <view class="gloableTextLine"></view>
+        </block>
+    </view>
+
+    
+    <!--<view class="disView">
+        <view class="gloableText"></view>
+        <view class="moreHealthService" bindtap="gotoHealthService">
+            <image src="/images/home-icon/icon_home_yunyiyuan.png" class="serviceImg"></image>
+            <text class="title_service">健康服务</text>
         </view>
-        <view class="seccion2">
-            <block wx:for-items="{{healthService}}">
-                <view class="session2Value" bindtap="sessionToggle" id="{{item.id}}">
-                    <image src="http://app.yunyichina.cn/{{item.logoUrl}}" class="image2"></image>
+        <view class="gloableTextLine"></view>
+    </view>-->
+    
+    <view class="moreHealthService" bindtap="gotoHealthService">
+        <image src="/images/home-icon/icon_home_yunyiyuan.png" class="serviceImg"></image>
+        <text class="title_service">健康服务</text>
+    </view>
+
+    <view class="session2">
+        <block wx:for-items="{{healthService}}">
+            <view class="session2Value" bindtap="sessionToggle" id="{{item.id}}">
+                <image src="http://app.yunyichina.cn/{{item.logoUrl}}" class="image"></image>
+                <view class="subView">
                     <text class="title2">{{item.name}}</text>
                     <text class="title2_sub">{{item.subName}}</text>
                 </view>
-                <view class="hLine"></view>
-            </block>
-        </view>
-
-
+            </view>
+        </block>
     </view>
+
+    <!--<view class="flex-wrp" style="height: 300px;flex-direction:row;">
+                <view class="flex-item bc_green">1</view>
+                <view class="flex-item bc_red">2</view>
+                <view class="flex-item bc_blue">3</view>
+    </view>-->
+
 </view>

@@ -1,6 +1,7 @@
 Page({
   data: {
         cloudService:[],
+        cloudServiceH:0,
         healthService:[]
   },
   
