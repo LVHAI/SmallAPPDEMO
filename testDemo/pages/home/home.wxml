@@ -1,46 +1,109 @@
 <!--index.wxml-->
 <view class="container">
 
-    <view class="seccion1">
-        <block wx:for-items="{{cloudService}}">
-            <view class="session1Value" bindtap="sessionToggle" id="{{item.id}}">
-                <image src="http://app.yunyichina.cn/{{item.logoUrl}}" class="image"></image>
-                <text class="title">{{item.name}}</text>
-            </view>
-        </block>
-    </view>
-
-    
-    <!--<view class="disView">
-        <view class="gloableText"></view>
-        <view class="moreHealthService" bindtap="gotoHealthService">
-            <image src="/images/home-icon/icon_home_yunyiyuan.png" class="serviceImg"></image>
-            <text class="title_service">健康服务</text>
+    <scroll-view class="scroll-view" scroll-y="true"  bindscrolltoupper="refresh" bindscrolltolower="loadMore">
+        <view wx:if="{{hasRefresh}}" style="text-align: center;">
+            <text >刷新中。。。。</text>
         </view>
-        <view class="gloableTextLine"></view>
-    </view>-->
-    
-    <view class="moreHealthService" bindtap="gotoHealthService">
-        <image src="/images/home-icon/icon_home_yunyiyuan.png" class="serviceImg"></image>
-        <text class="title_service">健康服务</text>
-    </view>
+        <view wx:else><text></text></view>
 
-    <view class="session2">
-        <block wx:for-items="{{healthService}}">
-            <view class="session2Value" bindtap="sessionToggle" id="{{item.id}}">
-                <image src="http://app.yunyichina.cn/{{item.logoUrl}}" class="image"></image>
-                <view class="subView">
-                    <text class="title2">{{item.name}}</text>
-                    <text class="title2_sub">{{item.subName}}</text>
+        <view class="seccion1">
+            <block wx:for-items="{{cloudService}}">
+                <view class="session1Value" bindtap="sessionToggle" id="{{item.id}}">
+                    <image src="http://app.yunyichina.cn/{{item.logoUrl}}" class="image"></image>
+                    <text class="title">{{item.name}}</text>
                 </view>
+            </block>
+        </view>
+
+        
+        <!--<view class="disView">
+            <view class="gloableText"></view>
+            <view class="moreHealthService" bindtap="gotoHealthService">
+                <image src="/images/home-icon/icon_home_yunyiyuan.png" class="serviceImg"></image>
+                <text class="title_service">健康服务</text>
             </view>
-        </block>
-    </view>
+            <view class="gloableTextLine"></view>
+        </view>-->
+        <view class="moreHospital moreHealthService" bindtap="gotoMoreHospital">
+            <image src="/images/home-icon/icon_home_yunyiyuan.png" class="serviceImg"></image>
+            <text class="title_service">云医院</text>
+            <text class="title_more">更多</text>
+            <image src="/images/home-icon/icon_notice_arrow.png" class="moreImg"></image>
+        </view>
+    <!--hospitalList3-->
 
-    <!--<view class="flex-wrp" style="height: 300px;flex-direction:row;">
-                <view class="flex-item bc_green">1</view>
-                <view class="flex-item bc_red">2</view>
-                <view class="flex-item bc_blue">3</view>
-    </view>-->
 
+        <view class="session3">
+            <block wx:for-items="{{hospitalList3}}">
+                <view class="session3Value" bindtap="sessionToggle" id="{{item.hospitalId}}">
+                    <image src="http://app.yunyichina.cn/mobileApp/images/upload/logo_{{item.hospitalCode}}.jpg" class="image46X46"></image>
+                    <text class="hospital_title">{{item.hospitalName}}</text>
+                </view>
+            </block>
+        </view>
+
+
+        <view class="moreHealthService" bindtap="gotoHealthService">
+            <image src="/images/home-icon/icon_home_health_service.png" class="serviceImg"></image>
+            <text class="title_service">健康服务</text>
+            <text class="title_more">更多</text>
+            <image src="/images/home-icon/icon_notice_arrow.png" class="moreImg"></image>
+        </view>
+
+
+
+        <view class="session2">
+            <block wx:for-items="{{healthService}}">
+                <view class="session2Value_{{index%2}}" bindtap="sessionToggle" id="{{item.id}}">
+                    <image src="http://app.yunyichina.cn/{{item.logoUrl}}" class="image48X48"></image>
+                    <view class="subView">
+                        <text class="title2">{{item.name}}</text>
+                        <text class="title2_sub">{{item.subName}}</text>
+                    </view>
+                </view>
+            </block>
+        </view>
+
+        <swiper indicator-dots="true" autoplay="true" interval="3500" duration="1000" class="swiper">
+            <block wx:for="{{banners}}">
+                <swiper-item>
+                    <image src="{{item.img}}" class="slide-image"/>
+                    <text>{{item.img}}</text>
+                </swiper-item>
+            </block>
+        </swiper>
+
+
+        <view class="moreHealthService" bindtap="gotoHealthService">
+            <image src="/images/home-icon/icon_home_health_news.png" class="serviceImg"></image>
+            <text class="title_service">健康咨询</text>
+        </view>
+
+
+        <!--<view class="flex-wrp" style="height: 300px;flex-direction:row;">
+                    <view class="flex-item bc_green">1</view>
+                    <view class="flex-item bc_red">2</view>
+                    <view class="flex-item bc_blue">3</view>
+        </view>-->
+        <!--健康咨询-->
+        <!--bindtap="session3Toggle"-->
+        <view class="session4">
+            <block wx:for-items="{{appHealthInfomationResponseList}}">
+                <view class="session4Value"  id="{{item.id}}">
+                    <image src="http://app.yunyichina.cn/{{item.imgUrl}}" class="image92X76"></image>
+                    <view class="subView">
+                        <text class="title4">{{item.title}}</text>
+                        <text class="title4_sub">{{item.subHead}}</text>
+                    </view>
+                </view>
+            </block>
+        </view>
+
+        <!--加载更多-->
+        <view wx:if="{{hasMore}}" style="text-align: center;">
+            <text>加载中。。。。</text>
+        </view>
+        <view wx:else><text></text></view>
+    </scroll-view>
 </view>
