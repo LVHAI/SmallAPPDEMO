@@ -1,0 +1,28 @@
+.hospitalList{
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.sessionValue{
+    flex-direction: row;
+    width: 100%;
+    height: 82px;
+    display: flex;
+    border-bottom-width: 1px;
+    border-bottom-color: #eee;
+    border-bottom-style: solid;
+}
+.image54X64{
+    height: 54px;
+    width: 54px;
+    margin-top: 14px;
+    margin-left: 16px;
+}
+.hospital_title{
+    font-size: 17px;
+    margin-top: 33px;
+    margin-left: 16px;
+    height: 17px;
+    color: #333333;
+}

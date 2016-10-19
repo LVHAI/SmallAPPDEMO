@@ -169,5 +169,3 @@ function getNewsList(param,classThis){
     });
 }
 
-module.exports = this
-
