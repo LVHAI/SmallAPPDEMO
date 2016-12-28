@@ -1,7 +1,8 @@
 Page({
   data: {
         cloudService:[],
-        healthService:[]
+        healthService:[],
+        hidden:false
   },
   
 
@@ -9,6 +10,14 @@ Page({
         // console.log(screen.availWidth);
         console.log("list");
         list(this);
+    },
+    onShow: function(){
+         var that = this;
+         setTimeout(function(){
+            that.setData({
+                hidden: true
+            });
+         }, 1500);
     },
     widgetsToggle: function (e) {
         var id = e.currentTarget.id, list = this.data.list;

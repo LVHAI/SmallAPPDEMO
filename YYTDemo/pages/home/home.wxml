@@ -1,6 +1,10 @@
 <!--index.wxml-->
 <view class="index">
 
+<loading hidden="{{hidden}}">
+        加载中...
+    </loading>
+    
     <view class="body">
         <view class="seccion1">
             <block wx:for-items="{{cloudService}}">

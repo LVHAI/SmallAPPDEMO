@@ -17,7 +17,8 @@
 .session1Value{
     text-align: center;
     width: 25%;
-    float: left;
+    /*float: left;*/
+    display: inline-block;
 }
 .image{
     height: 40px;
