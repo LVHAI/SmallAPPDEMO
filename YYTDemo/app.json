@@ -3,12 +3,12 @@
     "pages/home/home",
     "pages/healthService/healthService",
     "pages/notf/notf",
-    "pages/me/me"
+    "pages/me/me",
+    "pages/Cloudhospital/Cloudhospital"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "rgb(11,184,135)",
-    "navigationBarTitleText": "云医通",
     "navigationBarTextStyle":"white"
   },
   "tabBar": {

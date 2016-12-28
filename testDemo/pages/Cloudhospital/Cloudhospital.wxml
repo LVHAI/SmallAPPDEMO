@@ -1,0 +1,12 @@
+<view class="container">
+
+    <view class="hospitalList">
+        <block wx:for-items="{{hospitalList}}">
+            <view class="sessionValue"  id="{{item.id}}">
+                    <image src="http://app.yunyichina.cn/mobileApp/images/upload/logo_{{item.hospitalCode}}.jpg" class="image54X64"></image>
+                    <text class="hospital_title">{{item.hospitalName}}</text>
+            </view>
+        </block>
+    </view>
+
+</view>
